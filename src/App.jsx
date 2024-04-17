@@ -1,35 +1,50 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Navbar from './Navbar';
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-       <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a>
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1><font color="Yellow">hola</font></h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    return (
+        <Router>
+            <div>
+                <Navbar />
+                <Switch>
+                    {/* Definir rutas y componentes para cada página */}
+                    {/* Por ejemplo: */}
+                    <Route exact path="/" component={Home} /> 
+                    <Route path="/pagina1" component={Pagina1} /> 
+                    <Route path="/pagina2" component={Pagina2} /> 
+                    <Route path="/pagina3" component={Pagina3} /> 
+                    <Route path="/pagina4" component={Pagina4} /> 
+                    <Route path="/pagina5" component={Pagina5} /> 
+                    <Route path="/pagina6" component={Pagina6} /> 
+                    <Route path="/pagina7" component={Pagina7} /> 
+                    <Route path="/pagina8" component={Pagina8} /> 
+                </Switch>
+            </div>
+        </Router>
+    );
 }
 
-export default App
+export default App;
+
+
+// function Navbar() {
+//     return (
+//         <div className="navbar">
+//             <ul>
+//                 <li><Link to="/">Home</Link></li>
+//                 <li><Link to="/pagina1">Página 1</Link></li>
+//                 <li><Link to="/pagina2">Página 2</Link></li>
+//                 <li><Link to="/pagina3">Página 3</Link></li>
+//                 <li><Link to="/pagina4">Página 4</Link></li>
+//                 <li><Link to="/pagina5">Página 5</Link></li>
+//                 <li><Link to="/pagina6">Página 6</Link></li>
+//                 <li><Link to="/pagina7">Página 7</Link></li>
+//                 <li><Link to="/pagina8">Página 8</Link></li>
+//             </ul>
+//         </div>
+//     );
+// }
+
+// export default Navbar;
