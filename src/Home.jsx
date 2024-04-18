@@ -1,3 +1,11 @@
+import React from 'react';
 
 
-<h1>ESTO ES HOME...</h1>
+
+const Home = () => {
+ 
+        <h1>ESTO ES HOME...</h1>
+
+  };
+  
+  export default Home;
