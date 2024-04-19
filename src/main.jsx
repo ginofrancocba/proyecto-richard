@@ -6,9 +6,9 @@ import App from './App';
 import './index.css';
 
 createRoot(document.getElementById('root')).render(
-    <Router>
+  
       <div>
         <App />
       </div>
-    </Router>
+  
 );
