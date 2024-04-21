@@ -1,23 +1,21 @@
-
-
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './Navbar'
-import Home from './Home';
-import Numerologie from './numerologie';
-import Tarot from './Tarot';
-import Formations from './Formations';
-import Seances from './Seances';
-import Surmoi from './Surmoi';
-import Blog from './Blog';
-import Boutique from './Boutique';
-
+import Navbar from './componentes/Pages/Navbar'
+import Home from './componentes/Pages/Home/Home';
+import Numerologie from './componentes/Pages/Numerologie';
+import Tarot from './componentes/Pages/Tarot';
+import Formations from './componentes/Pages/Formations';
+import Seances from './componentes/Pages/Seances';
+import Surmoi from './componentes/Pages/Surmoi';
+import Blog from './componentes/Pages/Blog';
+import Boutique from './componentes/Pages/Boutique';
 import './index.css';
 
-const App = () => {
+function App () {
   return (
-    <Router>
-      <div>
-        <Navbar />
+    <>
+    <Router> 
+      <Home />  
+      <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Numerologie" element={<Numerologie />} />
@@ -27,9 +25,9 @@ const App = () => {
           <Route path="/surmoi" element={<Surmoi />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/boutique" element={<Boutique />} />
-        </Routes>
-      </div>
+        </Routes> 
     </Router>
+    </>
   );
 };
 
