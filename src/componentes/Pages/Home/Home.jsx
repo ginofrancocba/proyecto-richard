@@ -6,7 +6,9 @@ const Home = () => {
           <Layout>   
             <div>
               <section className='section1'>
-                <img class="img-header" src="/img-header2.png" alt="image-richard" ></img>
+                <div>
+                  <img class="img-header" src="/img-header2.png" alt="image-richard" ></img>
+                </div>
               </section>
               <section className='section2'>
                 <div className='p2-home'>

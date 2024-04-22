@@ -13,8 +13,7 @@ import './index.css';
 function App () {
   return (
     <>
-    <Router> 
-      <Home />  
+    <Router>  
       <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
