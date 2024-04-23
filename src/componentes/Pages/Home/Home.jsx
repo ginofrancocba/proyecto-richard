@@ -5,7 +5,7 @@ import emailjs from 'emailjs-com';
 
 
 const Home = () => {
-  const formRef = useRef(null); // Define form usando useRef
+  const formRef = useRef(null); 
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -15,15 +15,20 @@ const Home = () => {
       from_name: 'Tu nombre',
       message: 'Este es un correo electrónico de prueba enviado usando emailjs',
     };
+
+      // Reemplaza los siguientes valores con los IDs reales de tu cuenta de EmailJS
+      const serviceId = 'service_r3ebwrc';
+      const templateId = 'template_ggzepaa';
+      const userId = 'WmcRxYglEsBbNIw_6';
   
-    emailjs.send('TU_ID_DE_SERVICIO', 'TU_ID_DE_PLANTILLA', templateParams, 'TU_ID_DE_USUARIO')
-      .then((response) => {
-        console.log('Correo electrónico enviado correctamente:', response);
-      })
-      .catch((error) => {
-        console.error('Error al enviar el correo electrónico:', error);
-      });
-  };
+      emailjs.send(serviceId, templateId, templateParams, userId)
+        .then((response) => {
+          console.log('Correo electrónico enviado correctamente:', response);
+        })
+        .catch((error) => {
+          console.error('Error al enviar el correo electrónico:', error);
+        });
+    };
 
   return (
     <Layout>   
