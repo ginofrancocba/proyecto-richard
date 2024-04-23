@@ -2,7 +2,7 @@ import React from 'react';
 
 const Formations = () => {
       return (
-        <h1>ESTO ES FORMATIONS...</h1>
+        <h1>FORMATIONS...</h1>
       )
   };
   

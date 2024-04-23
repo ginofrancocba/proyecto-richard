@@ -2,7 +2,7 @@ import React from 'react';
 
 const Seances = () => {
       return (
-        <h1>ESTO ES SEANCES...</h1>
+        <h1>SEANCES...</h1>
       )
   };
   

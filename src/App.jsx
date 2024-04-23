@@ -1,3 +1,4 @@
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './componentes/Pages/Navbar'
 import Home from './componentes/Pages/Home/Home';
@@ -20,7 +21,7 @@ function App () {
           <Route path="/Numerologie" element={<Numerologie />} />
           <Route path="/Tarot" element={<Tarot />} />
           <Route path="/Formations" element={<Formations />} />
-          <Route path="/seances" element={<Seances />} />
+          <Route path="/Seances" element={<Seances />} />
           <Route path="/surmoi" element={<Surmoi />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/boutique" element={<Boutique />} />

@@ -87,18 +87,27 @@ a:hover {
   width: 100vw;
 }
 
+.p1-home {
+  display: flex;
+  width: 85%;
+  font-size: 1.1em;
+  line-height: 1.2;
+  color: #000;
+  justify-content: space-around;
+  margin: 3% 1% 1% 1%;
+  padding: 1% 0% 1% 5%;
+}
+
 .p2-home {
   display: inline-flex;
   width: 40vw;
-  font-size: 1em;
-  line-height: 1.1;
+  font-size: 1.5em;
+  line-height: 0%;
   color: #000;
-  
- 
 }
 
 .mi-formulario {
-  margin: 10% 30% 0% -30%; 
+  margin: 10% 30% 0% -37%; 
 }
 
 .mi-formulario ul {
@@ -107,21 +116,20 @@ a:hover {
 }
 
 .mi-formulario li {
-  margin-bottom: 1%; /* Espacio entre elementos */
+  margin-bottom: 0%; /* Espacio entre elementos */
   list-style: none;
 }
 
 .mi-formulario label {
   font-size: 1rem;
   display: block; /* Muestra las etiquetas en una línea nueva */
-  margin-bottom: 1%; /* Espacio inferior */
+  margin-bottom: 3%; /* Espacio inferior */
 }
 
 .mi-formulario input[type="text"],
 .mi-formulario input[type="email"],
 .mi-formulario textarea {
-  width: 22vw;
-  height: 1vh;
+  width: 25vw;
   padding:5% 5% 5% 5%;
   margin: 1% 0% 0% 0%;
   margin-bottom: 3%;
@@ -137,7 +145,7 @@ a:hover {
 }
 
 .mi-formulario input[type="submit"] {
-  width: 22vw;
+  width: 25vw;
   background-color: #9dce9e;
   color: white;
   border: none;
@@ -175,19 +183,21 @@ h1 {
   text-align: center;
   justify-content: center;
   border-bottom-style: solid ;
-  margin: 2% 2% 2% 5%;
+  margin: 4% 2% 7% 5%;
   padding: 0% 0% 2% 0%;
 }
 
-.img-curso, .img-libro {
+.img-curso, 
+.img-libro {
   display: inline-flex;
-  width: 44%;
-  padding: 3%; 
+  width: 30%;
+  margin: 0% 0% 1%;
+  padding: 5%; 
 }
 
 .section4 {
   display: inline-flex;
-  width: 100vw;
+  width: 80vw;
 }
 
 .p4-home {
@@ -204,6 +214,15 @@ h1 {
 .img-home1 {
   width: 40%;
   padding: 3% 0% 3% 10%; 
+}
+
+.img-slider1,
+.img-slider2 {
+  display: inline-flex;
+  width: 40vw; 
+  height: 50vh;
+  margin: 0% 0% 1%;
+  padding: 5%;
 }
 
 button {
