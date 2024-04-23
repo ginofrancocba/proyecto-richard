@@ -225,6 +225,29 @@ h1 {
   padding: 5%;
 }
 
+.slider-titulo {
+  font-size: 2.5em;
+  width: 50vw;
+  line-height: 1.1;
+  color: #000;
+  border-bottom-style: solid ;
+  margin: 5% 0% 6% 12%;
+  padding: 0% 0% 2% 0%;
+}
+
+/* Estilos para el botón de WhatsApp */
+.whatsapp-button {
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+  z-index: 1000; /* Asegura que esté encima de otros elementos */
+  cursor: pointer;
+}
+
+.whatsapp-button img {
+  width: 6vw; /* Ajusta el tamaño del icono de WhatsApp según sea necesario */
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;

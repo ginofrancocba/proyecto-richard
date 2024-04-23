@@ -28,7 +28,7 @@ const CustomSlider = () => {
 
   return (
     <div>
-      
+      <h2 className='slider-titulo'>Galerie d'images</h2>
     <Slider {...settings}>
       <div>
         <img className="img-slider1" src="/img-curso.jpeg" alt="imagen-curso" />

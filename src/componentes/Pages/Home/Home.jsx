@@ -30,6 +30,13 @@ const Home = () => {
         });
     };
 
+      // Función para abrir el chat de WhatsApp
+  const openWhatsAppChat = () => {
+    const phoneNumber = '34622311251'; // Reemplaza esto con tu número de WhatsApp
+    window.open(`https://wa.me/${phoneNumber}`, '_blank');
+  };
+
+
   return (
     <Layout>   
       <section className='section1'>
@@ -76,7 +83,7 @@ const Home = () => {
       </section>
       <section className='section3'>
         <div>
-          <h1>Próximos cursos</h1>
+          <h1>Cours à venir</h1>
         </div>
         <div>
           <Link to="/Formations">
@@ -96,6 +103,11 @@ const Home = () => {
       <section className='section5'>
         <CustomSlider />
       </section>
+      
+       {/* Botón de WhatsApp */}
+       <div className="whatsapp-button" onClick={openWhatsAppChat}>
+        <img src="/whatsapp-icon.png" alt="WhatsApp" />
+      </div>
     </Layout>
   );
 };
