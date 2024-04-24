@@ -8,18 +8,18 @@ const CustomSlider = () => {
 
     // Función para aumentar la velocidad
     const increaseSpeed = () => {
-        setSpeed((prevSpeed) => prevSpeed - 500); // Reducir la velocidad en 500 ms
+        setSpeed((prevSpeed) => prevSpeed - 400); // Reducir la velocidad en 500 ms
       };
 
           // Función para disminuir la velocidad
     const decreaseSpeed = () => {
-        setSpeed((prevSpeed) => prevSpeed + 500); // Aumentar la velocidad en 500 ms
+        setSpeed((prevSpeed) => prevSpeed + 400); // Aumentar la velocidad en 500 ms
           };
 
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 400,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true, 

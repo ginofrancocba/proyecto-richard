@@ -16,8 +16,25 @@ const Navbar = () => {
         <li><Link to="/Blog">Blog</Link></li>
         <li><Link to="/Boutique">Boutique</Link></li>
       </ul>
+      
+      {/* Redes Sociales */}
+      <div className="redes-sociales">
+        <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
+          <img src="/rrss1.png" alt="Twitter" />
+        </a>  
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+          <img src="/rrss2.png" alt="Facebook" />
+        </a>
+        <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">
+          <img src="/rrss3.png" alt="TikTok" />
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+          <img src="/rrss4.png" alt="Instagram" />
+        </a>
+      </div>
     </div>
   );
 };
 
 export default Navbar;
+
