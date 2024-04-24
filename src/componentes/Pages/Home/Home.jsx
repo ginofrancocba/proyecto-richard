@@ -124,7 +124,11 @@ const Home = () => {
           <CustomSlider />
         </div>
         <div className="paragraph-container">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi cumque dolorem, voluptas itaque nam totam voluptatum assumenda sapiente architecto nulla quia corporis. Eveniet nobis eum dolores, placeat totam perferendis debitis?</p>
+          <p className='p-paragraph'>Richard Albacete a pris la décision audacieuse de se consacrer entièrement à l'enseignement du Tarot et de la Numérologie, rendant ces disciplines anciennes
+             accessibles à tous. Son objectif est de populariser ces méthodes auprès du grand public, rehaussant leur statut et démontrant leur valeur. 
+             Grâce à de nombreuses expériences et défis surmontés, Richard a acquis une compréhension profonde qui lui a permis d'embrasser sa passion. 
+             Établir une école et enseigner à plein temps reflète son engagement envers son destin et son désir de vivre de ce qu'il aime, 
+             refusant le confort et le conformisme pour poursuivre une vie de réalisation personnelle.</p>
         </div>
       </section>
       <section className='section6'>
@@ -140,8 +144,16 @@ const Home = () => {
         </div>
       </section>
       <section className='section4'>
-        <div className='p4-home'>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum aliquam corrupti nobis, accusamus adipisci modi laborum. Facere nam vero tenetur dolores! Sunt praesentium debitis dolorum officiis pariatur nisi suscipit modi.</p>
+        <div className='p4'>
+          <p className='p-section4'>Richard Albacete a pris la décision audacieuse de se consacrer entièrement à l'enseignement du 
+            Tarot et de la Numérologie, rendant ces disciplines anciennes accessibles à tous. 
+            Son objectif est de populariser ces méthodes auprès du grand public, rehaussant leur statut 
+            et démontrant leur valeur. Grâce à de nombreuses expériences et défis surmontés, 
+            Richard a acquis une compréhension profonde qui lui a permis d'embrasser sa passion.
+            Établir une école et enseigner à plein temps reflète son engagement envers son destin et 
+            son désir de vivre de ce qu'il aime, refusant le confort et le conformisme pour poursuivre une
+            vie de réalisation personnelle.
+          </p>
           <img className="img-home1" src="/img-home1.jpeg" alt="imagen-richard" ></img>  
         </div>
          {/* Botón de WhatsApp */}
