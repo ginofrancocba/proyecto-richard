@@ -74,32 +74,24 @@ const Home = () => {
       </section>
       <section className='section-form'>
         <div className="p2-home">
-          <p className='p1-home'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, ex libero tenetur beatae iste quis molestiae error deserunt, vero explicabo minus laborum ut nulla ratione fuga velit porro voluptas iure.</p>
+          <p className='p1-home'>Découvrez votre objectif de vie avec clarté en utilisant la numérologie. Inscrivez-vous maintenant et obtenez une vision 
+          approfondie de votre passé, présent et futur. Abonnez-vous pour explorer votre potentiel et allumer votre passion avec nos guides détaillés !</p>
         </div>
-        <div className='p2-home'>
+        <div className='form-home'>
           <div className="column">
             <ul>
               <form className="mi-formulario" ref={formRef} onSubmit={sendEmail}>
                 <li>
-                  <label>Nombre</label>
+                  <input type="text" name="user_name" placeholder='Nom' />
                 </li>
                 <li>
-                  <input type="text" name="user_name" />
+                  <input type="email" name="user_email" placeholder='courrier électronique' />
                 </li>
                 <li>
-                  <label>Correo electrónico</label>
+                  <textarea name="message" placeholder='message' />
                 </li>
                 <li>
-                  <input type="email" name="user_email" />
-                </li>
-                <li>
-                  <label>Mensaje</label>
-                </li>
-                <li>
-                  <textarea name="message" />
-                </li>
-                <li>
-                  <input type="submit" value="Enviar" />
+                  <input type="submit" value="Subscribe" />
                 </li>
               </form>
             </ul>
@@ -145,16 +137,12 @@ const Home = () => {
       </section>
       <section className='section4'>
         <div className='p4'>
-          <p className='p-section4'>Richard Albacete a pris la décision audacieuse de se consacrer entièrement à l'enseignement du 
-            Tarot et de la Numérologie, rendant ces disciplines anciennes accessibles à tous. 
-            Son objectif est de populariser ces méthodes auprès du grand public, rehaussant leur statut 
-            et démontrant leur valeur. Grâce à de nombreuses expériences et défis surmontés, 
-            Richard a acquis une compréhension profonde qui lui a permis d'embrasser sa passion.
-            Établir une école et enseigner à plein temps reflète son engagement envers son destin et 
-            son désir de vivre de ce qu'il aime, refusant le confort et le conformisme pour poursuivre une
-            vie de réalisation personnelle.
+          <p className='p-section4'>Richard Albacete s'est engagé à rendre la Numérologie et le Tarot accessibles à tous, cherchant à populariser ces disciplines
+           ancestrales à travers l'enseignement. En bâtissant une école, il aspire à restituer leurs lettres de noblesse et à offrir une compréhension profonde 
+           de ces outils. Son parcours est marqué par des défis surmontés, enrichissant sa passion et sa maîtrise. Pour Richard, vivre de sa passion et aider les 
+           autres à découvrir leur destin sont essentiels pour une vie épanouie, loin de la facilité et du conformisme.
           </p>
-          <img className="img-home1" src="/img-home1.jpeg" alt="imagen-richard" ></img>  
+          <img className="img-about" src="/img-about.jpeg" alt="imagen-richard" ></img>  
         </div>
          {/* Botón de WhatsApp */}
        <div className="whatsapp-button" onClick={openWhatsAppChat}>
