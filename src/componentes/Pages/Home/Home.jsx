@@ -4,8 +4,7 @@ import { Layout } from '../../Layout/Layout';
 import emailjs from 'emailjs-com';
 import CustomSlider from '../Slider';
 import axios from 'axios';
-
-
+import Footer from '../../Footer/Footer'; // Importar el componente Footer
 
 
 
@@ -152,6 +151,7 @@ const Home = () => {
       <div className="button2">
          <Link to="/Seances">Seances Gratis...</Link>
       </div>
+      <Footer />
     </Layout>
   );
 };
