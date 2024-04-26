@@ -4,33 +4,31 @@ import { Layout } from '../../Layout/Layout';
 import emailjs from 'emailjs-com';
 import CustomSlider from '../Slider';
 import axios from 'axios';
-import Footer from '../../Footer/Footer'; // Importar el componente Footer
+import Footer from '../../Footer/Footer'; 
 
 
 
 const Home = () => {
   const formRef = useRef(null);
   const [reviews, setReviews] = useState([]);
-  const [paragraphContent, setParagraphContent] = useState('');
 
 
-   // Función para obtener los reviews de Facebook
    const PAGE_ID = '1091327095306985';
    const ACCESS_TOKEN = 'EAAPgjmPZAeukBO60fkSBGz63gFSuJuBaVvXTQ07KjqGldgo4gpLefWAr5BlIZBPlPHXJZCgdtVbRZB4OZCm5Xj0Uu9aLZC2GC34uGSGSi7g61HcEoOdQyRpRbDG1fBeImJ28sctNlD4qFxpZAaXZCeOZAZBgpwxZCd4lJ4qZA510FZCqKbSJbwlZCEbizb6oQZD';
+
+    // Llamar a la función para obtener los reviews cuando el componente se monta
+    useEffect(() => {
+      const fetchReviews = async () => {
+        try {
+          const response = await axios.get(`https://graph.facebook.com/${PAGE_ID}/ratings?access_token=${ACCESS_TOKEN}`);
+          setReviews(response.data.data);
+        } catch (error) {
+          console.error('Error al obtener los reviews de Facebook:', error);
+        }
+      };
+      fetchReviews();
+    }, []);
    
-   const fetchReviews = async () => {
-     try {
-       const response = await axios.get(`https://graph.facebook.com/${PAGE_ID}/ratings?access_token=${ACCESS_TOKEN}`);
-       setReviews(response.data.data);
-     } catch (error) {
-       console.error('Error al obtener los reviews de Facebook:', error);
-     }
-   };
-   
-      // Llamar a la función para obtener los reviews cuando el componente se monta
-      useEffect(() => {
-        fetchReviews();
-      }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();
