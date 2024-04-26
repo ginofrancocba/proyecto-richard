@@ -123,7 +123,7 @@ const Home = () => {
         </div>
       </section>
       <section className='section6'>
-        <h1>Reviews de Facebook</h1>
+        {/* <h1>Reviews de Facebook</h1> */}
         <div className="reviews-container">
           {reviews.map((review, index) => (
             <div className="card" key={index}>
