@@ -12,7 +12,7 @@
 }
 
 
-body {
+body, html {
   margin: 0 auto;
   max-width: 56vw;
   padding: 0vw;
@@ -25,8 +25,8 @@ body {
 .section5,
 .section6 {
   width: 100%;
-  max-width: 90vw;
-  padding: 2vh 0;
+
+  padding: 1rem  0,5rem;
 }
 
 .logo-navbar {
@@ -67,8 +67,8 @@ body {
   height: 100vh;
   width: 20vw;
   position: fixed;
-  z-index: 1; 
-  background-color: white ;
+  z-index: 2; 
+  background-color: white;
   left:0;
   top:0;
 }
@@ -77,10 +77,12 @@ body {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .navbar ul li a {
-    padding: 6px 8px 1px 20px;
+    padding: 2%;
     text-decoration: none;
     font-size: 120%;
     color: black;
@@ -89,7 +91,7 @@ body {
 }
 
 .navbar ul li a:hover {
-  transform: scale(1.2);
+  transform: scale(1.4);
   transition: 0.3s;
 }
 
@@ -114,6 +116,11 @@ a:hover {
   margin-top: 30%;
   margin-left: 30%;
   margin-right: 15px; /* Espacio entre cada ícono de red social */
+}
+
+.redes-sociales img:hover {
+  transform: scale(1.8);
+  transition: 0.3s;
 }
 
 .section1{
@@ -525,7 +532,6 @@ h2 {
   margin: 0% 0% 0% 0%;
   padding:1% 0% 0% 0%;
 }
-
 
 
 
